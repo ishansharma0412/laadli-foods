@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Manrope:wght@300;400;600;700&display=swap');
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Manrope", sans-serif;
+
+  /* Colors extracted from your Laadli Foods Packaging */
+  --color-brand-cream: #FDFBF7;   /* Background */
+  --color-brand-teal: #1F6E7C;    /* Top of Pack (Primary) */
+  --color-brand-rust: #D65A31;    /* Bottom of Pack (Accent) */
+  --color-brand-dark: #2D2420;    /* Text */
+  --color-brand-gold: #B8860B;    /* Premium details */
+}
+
+:root {
+  background-color: var(--color-brand-cream);
+  color: var(--color-brand-dark);
+  scroll-behavior: smooth;
+}
+
+/* Glass Effect for Navbar */
+.glass-nav {
+  background: rgba(253, 251, 247, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(31, 110, 124, 0.1);
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
